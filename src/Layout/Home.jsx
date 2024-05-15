@@ -8,6 +8,7 @@ import FAQ from "../Component/FAQ";
 import Review from "../Component/Review";
 import PackagePlans from "../Component/PackagePlans";
 import CTA from "../Component/CTA";
+import Footer from "../Component/Footer";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
         <Review />
         <PackagePlans />
         <CTA />
+        <Footer />
       </div>
     </div>
   );
