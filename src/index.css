@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-outfit{
+  font-family: "Outfit", sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.text-gradient-color{
+  background-image: linear-gradient(to right, #FC6739, #FFC947);
+
+}
+.text-gradient {
+  background-clip: text;
+  color: transparent;
+  /* text-decoration: underline; */
+}
+
