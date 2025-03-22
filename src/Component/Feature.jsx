@@ -1,89 +1,93 @@
-import React from "react";
-import icon from "../assets/Feature/image 318.png";
-import icon1 from "../assets/Feature/image 319.png";
-import icon2 from "../assets/Feature/image 320.png";
-import icon3 from "../assets/Feature/image 321.svg";
 import Heading from "../Shared Component/Heading";
 import Subheading from "../Shared Component/Subheading";
+import {
+  FaBullhorn,
+  FaCheckCircle,
+  FaFacebook,
+  FaGoogle,
+  FaList,
+  FaPen,
+  FaSearch,
+  FaTwitter,
+} from "react-icons/fa";
 
 const Feature = () => {
-  const allFeatures = [
+  const tools = [
     {
-      icon: icon,
-      title: "Blog Headlines",
-      desc: "Write a better blog title with our A.I tool.",
+      icon: <FaGoogle className="text-3xl " />,
+      title: "Google Analytics",
+      desc: "Track audience behavior and make data-driven decisions to improve content performance.",
     },
     {
-      icon: icon1,
-      title: "Blog Intros",
-      desc: "Generate a paragraph of blog content using Blog Intros tool",
-    },
-
-    {
-      icon: icon2,
-      title: "Blog Outline",
-      desc: "Need an attention-grabbing headline for your article?",
+      icon: <FaSearch className="text-3xl " />,
+      title: "SEMrush",
+      desc: "Identify high-performing keywords and optimize SEO rankings to drive traffic.",
     },
     {
-      icon: icon,
-      title: "Blog Conclusions",
-      desc: "Write a better conclusions with AI writing tool.",
+      icon: <FaCheckCircle className="text-3xl " />,
+      title: "Yoast SEO",
+      desc: "Optimize your content for search engines with real-time suggestions for better visibility.",
     },
     {
-      icon: icon3,
-      title: "Content Rewriter",
-      desc: "Get AI writer to rewrite your sentence in a different way.",
+      icon: <FaPen className="text-3xl " />,
+      title: "Grammarly",
+      desc: "Ensure error-free, polished content with advanced grammar and style checks.",
     },
     {
-      icon: icon1,
-      title: "Product Description",
-      desc: "Need an attention-grabbing headline for your article?",
+      icon: <FaBullhorn className="text-3xl " />,
+      title: "Hemingway Editor",
+      desc: "Make your writing clear and concise by improving readability and sentence structure.",
     },
     {
-      icon: icon2,
-      title: "PAS Copywriting Formula",
-      desc: "Get AI writer to rewrite your sentence in a different way.",
+      icon: <FaList className="text-3xl " />,
+      title: "BuzzSumo",
+      desc: "Discover popular content topics in your industry to create engaging and relevant content.",
     },
     {
-      icon: icon,
-      title: "Company About Us",
-      desc: "Write a better blog title with our AI tool.",
+      icon: <FaGoogle className="text-3xl " />,
+      title: "Canva",
+      desc: "Create stunning visuals to complement your content and enhance user engagement.",
+    },
+    {
+      icon: <FaFacebook className="text-3xl " />,
+      title: "Asana",
+      desc: "Manage projects and deadlines with our organized task management system.",
+    },
+    {
+      icon: <FaTwitter className="text-3xl " />,
+      title: "Buffer",
+      desc: "Schedule and manage social media posts to ensure your content gets maximum reach.",
     },
   ];
 
-  console.log(allFeatures);
-
   return (
     <div className="border-b border-[#252835]">
-    <div className="container mx-auto px-4">
-    <div className="text-center mt-24 text-white max-w-lg mx-auto">
-        <Heading label={"54 exciting writing tools"} />
-        <Subheading
-          label={
-            "AI engines take information from various sources and read them like a human would do."
-          }
-        />
-      </div>
+      <div className="container mx-auto px-4">
+        <div className="text-center mt-24 text-white max-w-lg mx-auto">
+          <Heading label={"Tools We Use"} />
+          <Subheading
+            label={
+              "We believe in using the best tools available to create top-tier content. From research to writing and SEO optimization, our team is equipped with the right technology to ensure your content stands out."
+            }
+          />
+        </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 my-20">
-        {allFeatures.map((data, index) => (
-          <div
-            className="flex gap-4 justify-between font-inter bg-[#282A37] p-6 rounded-xl text-white"
-            key={index}
-          >
-            <img src={data.icon} alt="" className="w-8 h-8" />
-            <div>
-              <h1>{data.title}</h1>
-              <p className="text-sm text-gray-500 mt-2">{data.desc}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 my-20">
+          {tools.map((data, index) => (
+            <div
+              className="flex gap-4 justify-between font-inter bg-[#282A37] p-6 rounded-xl text-white  items-start"
+              key={index}
+            >
+              {data.icon}
+              <div>
+                <h1>{data.title}</h1>
+                <p className="text-sm text-gray-500 mt-2">{data.desc}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <p className="text-center  font-inter  pb-28 text-white ">
-        See all 54 available tools
-      </p>
-    </div>
+      </div>
     </div>
   );
 };

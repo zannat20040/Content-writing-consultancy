@@ -5,11 +5,8 @@ import {
   Typography,
   Button,
   IconButton,
-  Card,
 } from "@material-tailwind/react";
-import Banner from "./Banner";
-import logo from "../assets/ed49ac106692c8d48d005987f226611a.png";
-import ButtonLayout from "../Shared Component/ButtonLayout";
+import logo from "../assets/favicon.png";
 
 const ResponsiveNavbar = () => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -23,9 +20,14 @@ const ResponsiveNavbar = () => {
 
   const navList = (
     <ul className="  items-center flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-FAFAFA ">
-      <a href="#" className="flex items-center">
-        <img src={logo} alt="" className="w-20" />
+      <a href="#" className="flex items-center py-3">
+        <img src={logo} alt="" className="w-9" />
       </a>
+      <Typography as="li" variant="small" className="font-normal">
+        <a href="#" className="flex items-center font-inter">
+          Home
+        </a>
+      </Typography>{" "}
       <Typography as="li" variant="small" className="font-normal">
         <a href="#" className="flex items-center font-inter">
           Demos
@@ -38,17 +40,22 @@ const ResponsiveNavbar = () => {
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
         <a href="#" className="flex items-center font-inter">
+          Services
+        </a>
+      </Typography>
+      <Typography as="li" variant="small" className="p-1 font-normal">
+        <a href="#" className="flex items-center font-inter">
           Blog
         </a>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
         <a href="#" className="flex items-center font-inter">
-          Pages
+          Contact
         </a>
-      </Typography>
+      </Typography>{" "}
       <Typography as="li" variant="small" className="p-1 font-normal">
         <a href="#" className="flex items-center font-inter">
-          Contact
+          Get a Quote
         </a>
       </Typography>
     </ul>
@@ -70,7 +77,7 @@ const ResponsiveNavbar = () => {
               </Button>
               <Button
                 variant="gradient"
-                className="hidden lg:inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r from-[#2B59FF] to-[#BB2BFF]  hover:from-[#5C7FFF] hover:to-[#CB5CFF] transition-all duration-700 ease-in-out focus:from-[#0035F5] focus:to-[#A600F5]"
+                className="hidden lg:inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r from-[#c33764] to-[#1d2671]  hover:to-[#c33764] hover:from-[#1d2671] transition-all duration-700 ease-in-out focus:from-[#ea5785] focus:to-[#3a46ba]"
               >
                 <span>Get Started Free</span>
               </Button>

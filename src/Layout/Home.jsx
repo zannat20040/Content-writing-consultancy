@@ -1,4 +1,3 @@
-import React from "react";
 import ResponsiveNavbar from "../Component/ResponsiveNavbar";
 import Banner from "../Component/Banner";
 import About from "../Component/About";
@@ -19,12 +18,12 @@ const Home = () => {
         <HappyClient />
         <About />
         <Feature />
-        <FAQ />
       </div>
       <div className="bg-gradient-to-t from-[#17192400] to-[#171924]">
         <Review />
         <PackagePlans />
         <CTA />
+        <FAQ />
         <Footer />
       </div>
     </div>

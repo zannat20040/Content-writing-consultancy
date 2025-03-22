@@ -1,42 +1,92 @@
-import React from "react";
 import AboutLayout from "../Shared Component/AboutLayout";
 import AboutImageLayout from "../Shared Component/AboutImageLayout";
-import img1 from "../assets/about/Card 1.png";
-import img2 from "../assets/about/image.png";
+import img1 from "../assets/about/work (1).avif";
+import img2 from "../assets/about/work (2).avif";
+import img3 from "../assets/about/work (1).jpg";
+import img4 from "../assets/about/work (2).jpg";
+import img5 from "../assets/about/work (3).jpg";
 
 const About = () => {
   return (
-    <div className="container mx-auto px-5 mt-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center ">
+    <div className="container mx-auto px-5 mt-6 about-section">
+      {/* 1st */}
+      <div className="aboutus grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center ">
         <AboutImageLayout
-          img={img2}
+          img={img1}
           color="rgba(159, 54, 242, 0.3)"
           direction="60px 0 100px"
         />
         <AboutLayout
           h1TagOpeninng={
-            "Create content efficiently and quickly with great AI writing tools"
+            "Understanding Your Brand, Audience, and Content Goals"
           }
           pTagopening={
-            "150k+ users. No Credit Card Required. Pro designs and writing at no cost. Start for free. Ai Writer Tool | Generate text for ecom, social media, website, sales, blogs etc."
+            "We start by learning about your business, target audience, and content goals. During this phase, we discuss your brand voice, objectives, and what you aim to achieve with your content."
           }
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-12 mt-6 justify-center items-center">
+      {/* 2nd */}
+      <div className="mt-20 aboutus grid grid-cols-1 md:grid-cols-2  gap-12 justify-center items-center">
         <div className="ml-0 md:ml-14">
           <AboutLayout
-            h1TagOpeninng={
-              "Write what you want to convey through clear, & authentic writing"
-            }
+            h1TagOpeninng={"Creating a Custom Plan for Your Content Needs"}
             pTagopening={
-              "150k+ users. No Credit Card Required. Pro designs and writing at no cost. Start for free. Ai Writer Tool | Generate text for ecom, social media, website, sales, blogs etc."
+              "Once we understand your needs, we create a content strategy tailored to your goals. This includes keyword research, topic selection, and planning the types of content that will resonate with your audience."
             }
           />
         </div>
         <AboutImageLayout
-          img={img1}
+          img={img2}
           color="rgba(54, 107, 242, 0.3)"
           direction="-54px 0 100px"
+        />
+      </div>
+      {/* 3rd */}
+      <div className="mt-20 aboutus grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center ">
+        <AboutImageLayout
+          img={img3}
+          color="rgba(159, 54, 242, 0.3)"
+          direction="60px 0 100px"
+        />
+        <AboutLayout
+          h1TagOpeninng={
+            "Writing High-Quality, Engaging, and SEO-Friendly Content"
+          }
+          pTagopening={
+            "Our team of expert writers crafts high-quality, engaging, and SEO-optimized content. Each piece is written with your brand’s voice in mind to ensure consistency and authenticity."
+          }
+        />
+      </div>
+      {/* 4th */}
+      <div className="mt-20 aboutus grid grid-cols-1 md:grid-cols-2  gap-12 justify-center items-center">
+        <div className="ml-0 md:ml-14">
+          <AboutLayout
+            h1TagOpeninng={
+              "Working with You to Improve and Finalize the Content"
+            }
+            pTagopening={
+              "We share the content with you for feedback. Your input is important to us. We ensure your vision is captured, making revisions as needed to ensure complete satisfaction."
+            }
+          />
+        </div>
+        <AboutImageLayout
+          img={img4}
+          color="rgba(54, 107, 242, 0.3)"
+          direction="-54px 0 100px"
+        />
+      </div>
+      {/* 5th */}
+      <div className="mt-20 aboutus grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center ">
+        <AboutImageLayout
+          img={img5}
+          color="rgba(159, 54, 242, 0.3)"
+          direction="60px 0 100px"
+        />
+        <AboutLayout
+          h1TagOpeninng={"Providing You with Ready-to-Publish Content"}
+          pTagopening={
+            "Once everything is perfect, we deliver the final content, ready to be published. Whether it’s blog posts, website copy, or product descriptions, you’ll receive content that’s optimized for both users and search engines."
+          }
         />
       </div>
     </div>
