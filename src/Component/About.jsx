@@ -6,8 +6,8 @@ import img2 from "../assets/about/image.png";
 
 const About = () => {
   return (
-    <div className=" mt-6">
-      <div className="grid grid-cols-2 gap-12 justify-center items-center ">
+    <div className="container mx-auto px-5 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center ">
         <AboutImageLayout
           img={img2}
           color="rgba(159, 54, 242, 0.3)"
@@ -22,8 +22,8 @@ const About = () => {
           }
         />
       </div>
-      <div className="grid grid-cols-2 gap-12 mt-6 justify-center items-center">
-        <div className="ml-14">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-12 mt-6 justify-center items-center">
+        <div className="ml-0 md:ml-14">
           <AboutLayout
             h1TagOpeninng={
               "Write what you want to convey through clear, & authentic writing"

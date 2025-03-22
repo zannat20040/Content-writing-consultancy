@@ -80,7 +80,8 @@ const Review = () => {
   ];
   return (
     <div className="border-b border-[#252835]  pb-28">
-      <div className="text-center mt-24 text-white max-w-xl  mx-auto">
+     <div className="container mx-auto px-5 ">
+     <div className="text-center pt-24 text-white max-w-xl  mx-auto">
         <Heading label={"What our customers say"} />
         <Subheading
           label={
@@ -89,7 +90,7 @@ const Review = () => {
         />
       </div>
 
-      <div className="grid grid-cols-4 gap-6 justify-between mt-28 font-inter">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-between mt-28 font-inter">
         {allReviews.map((data, index) => (
           <div className="bg-white p-5 rounded-md h-fit " key={index}>
             <div className="flex justify-between gap-4">
@@ -107,6 +108,7 @@ const Review = () => {
           </div>
         ))}
       </div>
+     </div>
     </div>
   );
 };

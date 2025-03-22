@@ -13,14 +13,15 @@ import Footer from "../Component/Footer";
 const Home = () => {
   return (
     <div className="bg-12141D">
-      <div className="container mx-auto h-full px-4">
+      <div className="">
         <ResponsiveNavbar />
-
         <Banner />
         <HappyClient />
         <About />
         <Feature />
         <FAQ />
+      </div>
+      <div className="bg-gradient-to-t from-[#17192400] to-[#171924]">
         <Review />
         <PackagePlans />
         <CTA />

@@ -54,8 +54,9 @@ const Feature = () => {
   console.log(allFeatures);
 
   return (
-    <div className="px-4">
-      <div className="text-center mt-24 text-white max-w-lg mx-auto">
+    <div className="border-b border-[#252835]">
+    <div className="container mx-auto px-4">
+    <div className="text-center mt-24 text-white max-w-lg mx-auto">
         <Heading label={"54 exciting writing tools"} />
         <Subheading
           label={
@@ -64,7 +65,7 @@ const Feature = () => {
         />
       </div>
 
-      <div className="grid grid-cols-4 gap-10 my-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 my-20">
         {allFeatures.map((data, index) => (
           <div
             className="flex gap-4 justify-between font-inter bg-[#282A37] p-6 rounded-xl text-white"
@@ -79,9 +80,10 @@ const Feature = () => {
         ))}
       </div>
 
-      <p className="text-center  font-inter border-b border-[#252835] pb-28 text-white ">
+      <p className="text-center  font-inter  pb-28 text-white ">
         See all 54 available tools
       </p>
+    </div>
     </div>
   );
 };

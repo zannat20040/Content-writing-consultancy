@@ -21,10 +21,10 @@ const HappyClient = () => {
     ];
 
     return (
-        <div className=' py-16'>
+        <div className='container mx-auto px-5 py-16'>
             <p className='font-outfit text-2xl text-white text-center'>Trusted by nearly 5000+ paying customers</p>
             
-            <div className='grid grid-cols-4 gap-12 justify-center items-center max-w-2xl mx-auto mt-16 '>
+            <div className='grid sm:grid-col-2 md:grid-cols-3 lg:grid-cols-4 gap-12 justify-center items-center max-w-2xl mx-auto mt-16 '>
                 {clientLogos.map((data, index) => (
                     <img src={data.clientImg} alt="" key={index} className='filter opacity-50'/>
                 ))}

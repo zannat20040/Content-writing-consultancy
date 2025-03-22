@@ -22,7 +22,7 @@ const ResponsiveNavbar = () => {
   }, []);
 
   const navList = (
-    <ul className=" flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-FAFAFA ">
+    <ul className="  items-center flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-FAFAFA ">
       <a href="#" className="flex items-center">
         <img src={logo} alt="" className="w-20" />
       </a>
@@ -55,9 +55,10 @@ const ResponsiveNavbar = () => {
   );
 
   return (
-    <Navbar className="sticky top-0 z-10 bg-12141D border-0 shadow-none max-w-full rounded-none px-4 py-0">
+    <div className="sticky top-0 z-10 bg-transparent">
+      <Navbar className=" container mx-auto  px-5 border-0 bg-12141D  shadow-none rounded-none py-0">
         <div className="flex items-center justify-between ">
-          <div className="flex items-center  gap-4 w-full  justify-between">
+          <div className="flex items-center  gap-4 w-full  justify-between py-3 lg:py-0">
             <div className="mr-4 hidden lg:block ">{navList}</div>
             <div className="flex items-end gap-x-3">
               <Button
@@ -67,11 +68,16 @@ const ResponsiveNavbar = () => {
               >
                 <span>Sign in</span>
               </Button>
-              <ButtonLayout label={"Get Started Free"} />
+              <Button
+                variant="gradient"
+                className="hidden lg:inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r from-[#2B59FF] to-[#BB2BFF]  hover:from-[#5C7FFF] hover:to-[#CB5CFF] transition-all duration-700 ease-in-out focus:from-[#0035F5] focus:to-[#A600F5]"
+              >
+                <span>Get Started Free</span>
+              </Button>
             </div>
             <IconButton
               variant="text"
-              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className="ml-auto py-2 h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden block "
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >
@@ -108,21 +114,27 @@ const ResponsiveNavbar = () => {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav}>
+        <MobileNav open={openNav} className="p-5 lg:p-0">
           {navList}
-          <div className="flex items-center gap-x-1 ">
+          <div className="flex gap-3 items-center flex-col mt-5 ">
             <Button
               fullWidth
               variant="text"
               size="sm"
-              className="hidden lg:inline-block text-FAFAFA capitalize font-inter py-3 text-sm px-7 border border-[#FFFFFF4D] rounded font-normal"
+              className=" block lg:hidden  text-FAFAFA capitalize font-inter py-3 text-sm px-7 border border-[#FFFFFF4D] rounded font-normal w-full"
             >
               <span>Sign in</span>
             </Button>
-            <ButtonLayout label={"Get Started Free"} fullWidth />
+            <Button
+              variant="gradient"
+              className="block w-full lg:hidden text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r from-[#2B59FF] to-[#BB2BFF]  hover:from-[#5C7FFF] hover:to-[#CB5CFF] transition-all duration-700 ease-in-out focus:from-[#0035F5] focus:to-[#A600F5]"
+            >
+              <span>Get Started Free</span>
+            </Button>
           </div>
         </MobileNav>
       </Navbar>
+    </div>
   );
 };
 

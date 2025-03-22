@@ -9,7 +9,6 @@ const Footer = () => {
     },
     {
       title: "Help",
-      links: ["Discord", "Twitter", "GitHub", "Contact Us"],
       links: [
         "Customer Support",
         "  Delivery Details",
@@ -19,7 +18,6 @@ const Footer = () => {
     },
     {
       title: "Resources",
-      links: ["Blog", "Newsletter", "Free Products", "Affiliate Program"],
       links: [
         "Free eBooks",
         " Development Tutorial",
@@ -40,8 +38,8 @@ const Footer = () => {
 
   return (
     <footer className=" ">
-      <div className="w-full mt-20">
-        <div className=" grid w-full grid-cols-1 text-white gap-8 py-12 md:grid-cols-2 lg:grid-cols-4 justify-between">
+      <div className="w-full mt-20 container mx-auto px-5">
+        <div className=" grid w-full  text-white gap-8 py-12 grid-cols-2 lg:grid-cols-4 justify-between">
           {SITEMAP.map(({ title, links, index }) => (
             <div key={index} className="w-full">
               <Typography

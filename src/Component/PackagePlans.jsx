@@ -42,13 +42,13 @@ const PackagePlans = () => {
     },
   ];
   return (
-    <div>
+    <div className="container mx-auto px-5">
       <div className="text-center mt-24 text-white max-w-xl  mx-auto">
         <Heading label={"Make the wise decision for your business"} />
         <Subheading label={"Choose from our affordable 3 packages"} />
       </div>
 
-      <div className="grid grid-cols-3 gap-10 justify-between mt-24 text-gray-500 font-inter ">
+      <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 justify-between mt-24 text-gray-500 font-inter ">
         {plans.map((data, index) => (
           <div className="p-10 bg-[#282A37] rounded-2xl flex flex-col justify-between gap-16 ">
             <div>
@@ -69,14 +69,14 @@ const PackagePlans = () => {
             {data.price == "$79" ? (
               <Button
                 variant="gradient"
-                className="w-full hidden lg:inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r from-[#2B59FF] to-[#BB2BFF]  hover:from-[#5C7FFF] hover:to-[#CB5CFF] transition-all duration-700 ease-in-out focus:from-[#0035F5] focus:to-[#A600F5]"
+                className="w-full inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r from-[#2B59FF] to-[#BB2BFF]  hover:from-[#5C7FFF] hover:to-[#CB5CFF] transition-all duration-700 ease-in-out focus:from-[#0035F5] focus:to-[#A600F5]"
               >
                 <span>Blog Headlines</span>
               </Button>
             ) : (
               <Button
                 variant="text"
-                className="hidden lg:inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded-md font-normal bg-12141D border border-[#FFFFFF4D] w-full"
+                className="inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded-md font-normal bg-12141D border border-[#FFFFFF4D] w-full"
               >
                 <span>Blog Intros</span>
               </Button>
