@@ -1,4 +1,3 @@
-import React from "react";
 import Heading from "../Shared Component/Heading";
 import Subheading from "../Shared Component/Subheading";
 import img1 from "../assets/Review/Ellipse 14.png";
@@ -14,101 +13,102 @@ import { IoLogoTwitter } from "react-icons/io5";
 const Review = () => {
   const allReviews = [
     {
-      profile: img1,
-      profileName: "Darrell Steward",
-      userName: "@darrels",
+      profile: img1, // Replace with the actual image path
+      profileName: "John Doe",
+      userName: "@johnwrites",
       review:
-        "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.",
-      hashtag: "#another ",
+        "The content I received was top-notch! It helped boost my site’s SEO and improve user engagement. Highly recommend!",
+      hashtag: "#SEO #contentwriting",
     },
     {
-      profile: img2,
-      profileName: "Leslie Alexander",
-      userName: "@lesslie",
+      profile: img2, // Replace with the actual image path
+      profileName: "Alice Smith",
+      userName: "@alicesmith",
       review:
-        "Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.",
-      hashtag: "#postcrafts ",
+        "Amazing service! The blog posts were insightful and well-researched. I've seen a significant increase in traffic since publishing.",
+      hashtag: "#blogging #contentmarketing",
     },
     {
-      profile: img3,
-      profileName: "Jenny Wilson",
-      userName: "@jennywilson",
+      profile: img3, // Replace with the actual image path
+      profileName: "Robert Brown",
+      userName: "@robertbrown",
       review:
-        "This is a top quality product. No need to think twice before making it live on web.",
-      hashtag: "#make_it_fast",
+        "Their website copy is fantastic! It perfectly matches my brand voice and helped us convert more visitors into customers.",
+      hashtag: "#websitecopy #digitalmarketing",
     },
     {
-      profile: img4,
-      profileName: "Kristin Watson",
-      userName: "@kristinwatson2",
+      profile: img4, // Replace with the actual image path
+      profileName: "Linda White",
+      userName: "@lindawrites",
       review:
-        "Finally, I’ve found a template that covers all bases for a bootstrapped startup. We were able to launch in days, not months. ",
-      hashtag: " #postcrafts",
+        "Postcrafts delivered exactly what I needed. Their team created a seamless content strategy that resonated with my audience.",
+      hashtag: "#contentstrategy #brandvoice",
     },
     {
-      profile: img7,
-      profileName: "Guy Hawkins",
-      userName: "@jennywilson",
+      profile: img7, // Replace with the actual image path
+      profileName: "David Johnson",
+      userName: "@davidjohnson",
       review:
-        "This is a top quality product. No need to think twice before making it live on web.",
-      hashtag: "#make_it_fast",
+        "I was struggling with content creation for my e-commerce site, but Postcrafts made it easy with their professional product descriptions.",
+      hashtag: "#ecommerce #productdescriptions",
     },
     {
-      profile: img8,
-      profileName: "Marvin McKinney",
-      userName: "@jennywilson",
+      profile: img8, // Replace with the actual image path
+      profileName: "Sophia Lee",
+      userName: "@sophialeewrites",
       review:
-        "With Postcrafts, it’s quicker with the customer, the customer is more ensured of getting exactly what they ordered, and I’m all for the efficiency.",
-      hashtag: "#dev #tools",
+        "The social media content created by Postcrafts has been a game-changer. Engaging posts that resonate with my followers!",
+      hashtag: "#socialmedia #contentcreation",
     },
     {
-      profile: img6,
-      profileName: "Annette Black",
-      userName: "@jennywilson",
+      profile: img6, // Replace with the actual image path
+      profileName: "Mark Taylor",
+      userName: "@marktaylorwrites",
       review:
-        "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.",
-      hashtag: "#another",
+        "Fast, reliable, and professional. The blog posts I received were insightful and optimized for search engines.",
+      hashtag: "#blogwriting #SEO",
     },
     {
-      profile: img5,
-      profileName: "Floyd Miles",
-      userName: "@jennywilson",
+      profile: img5, // Replace with the actual image path
+      profileName: "Emma Davis",
+      userName: "@emmadaviswrites",
       review:
-        "@jennywilsonMy new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.",
-      hashtag: "#postcrafts",
+        "Fantastic service! They helped me build content for my newsletter that not only kept subscribers engaged but also drove conversions.",
+      hashtag: "#emailmarketing #newslettercontent",
     },
   ];
+  
   return (
     <div className="border-b border-[#252835]  pb-28">
-     <div className="container mx-auto px-5 ">
-     <div className="text-center pt-24 text-white max-w-xl  mx-auto">
-        <Heading label={"What our customers say"} />
-        <Subheading
-          label={
-            "Read why thousands of marketers, writers, and entrepreneurs love us so much."
-          }
-        />
-      </div>
+      <div className="container mx-auto px-5 ">
+        <div className="text-center pt-24 text-white max-w-xl  mx-auto">
+          <Heading label={"What our customers say"} />
+          <Subheading
+            label={
+              "Read why thousands of marketers, and entrepreneurs love us so much."
+            }
+          />
+        </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-between mt-28 font-inter">
-        {allReviews.map((data, index) => (
-          <div className="bg-white p-5 rounded-md h-fit " key={index}>
-            <div className="flex justify-between gap-4">
-              <div className="flex gap-3 mb-5">
-                <img src={data.profile} alt=""/>
-                <div>
-                <h4 className="font-semibold">{data.profileName}</h4>
-                <p className="text-sm text-gray-600">{data.userName}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-between mt-28 font-inter">
+          {allReviews.map((data, index) => (
+            <div className="bg-white p-5 rounded-md h-fit " key={index}>
+              <div className="flex justify-between gap-4">
+                <div className="flex gap-3 mb-5">
+                  <img src={data.profile} alt="" />
+                  <div>
+                    <h4 className="font-semibold">{data.profileName}</h4>
+                    <p className="text-sm text-gray-600">{data.userName}</p>
+                  </div>
                 </div>
+                <IoLogoTwitter className="text-[#0EA5E9]" />
               </div>
-              <IoLogoTwitter className="text-[#0EA5E9]" />
+              <p className="">{data.review}</p>
+              <span className="text-[#0EA5E9]">{data.hashtag}</span>
             </div>
-            <p className="">{data.review}</p>
-            <span className="text-[#0EA5E9]">{data.hashtag}</span>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-     </div>
     </div>
   );
 };

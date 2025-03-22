@@ -2,9 +2,9 @@ import AboutLayout from "../Shared Component/AboutLayout";
 import AboutImageLayout from "../Shared Component/AboutImageLayout";
 import img1 from "../assets/about/work (1).avif";
 import img2 from "../assets/about/work (2).avif";
-import img3 from "../assets/about/work (1).jpg";
-import img4 from "../assets/about/work (2).jpg";
-import img5 from "../assets/about/work (3).jpg";
+import img3 from "../assets/about/work(1).png";
+import img4 from "../assets/about/work(2).png";
+import img5 from "../assets/about/work(3).png";
 
 const About = () => {
   return (

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Heading from "../Shared Component/Heading";
 import { Button } from "@material-tailwind/react";
 import Answer1 from "./Answer1";
+import { GoDotFill } from "react-icons/go";
 
 const FAQ = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -49,7 +50,7 @@ const FAQ = () => {
                   variant="text"
                   className={`focus:border-0 ${
                     activeQuestion === index
-                      ? "w-full inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r from-[#c33764] to-[#1d2671]   transition-all duration-700 ease-in-out "
+                      ? "w-full inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r  to-[#E100FF] from-[#7F00FF] transition-all duration-700 ease-in-out"
                       : "inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded-md font-normal bg-12141D border border-[#FFFFFF4D] w-full"
                   }`}
                   onClick={() => handleToggle(index)}
@@ -60,7 +61,12 @@ const FAQ = () => {
             ))}
           </ul>
 
-          <div className="md:col-span-2 lg:col-span-3 bg-[#1D232A] rounded-md p-10">
+          <div className="md:col-span-2 lg:col-span-3 bg-[#1D232A] rounded-md p-10 pt-5">
+            <div className="flex  mb-8">
+              <GoDotFill className="text-2xl text-red-600" />{" "}
+              <GoDotFill className="text-2xl text-yellow-600" />{" "}
+              <GoDotFill className="text-2xl text-green-600" />
+            </div>
             {activeQuestion === 0 ? (
               <Answer1 />
             ) : activeQuestion === 1 ? (
@@ -112,12 +118,12 @@ const FAQ = () => {
                 <span className="font-bold">Yes!</span> <br />
                 <br /> Our team has extensive experience writing for various
                 industries, including e-commerce, healthcare, technology, real
-                estate, finance, and more. Whether you're in a niche industry or
-                a broader market, we are adept at understanding your unique
-                needs and tailoring content to suit your target audience. <br />{" "}
-                <br /> We ensure that each piece of content we create resonates
-                with your specific market while maintaining high standards of
-                quality and relevance.
+                estate, finance, and more. Whether you&apos;re in a niche
+                industry or a broader market, we are adept at understanding your
+                unique needs and tailoring content to suit your target audience.{" "}
+                <br /> <br /> We ensure that each piece of content we create
+                resonates with your specific market while maintaining high
+                standards of quality and relevance.
               </p>
             ) : activeQuestion === 5 ? (
               <p className="text-[#B7B8BB]">

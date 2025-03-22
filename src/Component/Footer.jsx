@@ -1,17 +1,16 @@
-import React from "react";
 import { Typography } from "@material-tailwind/react";
 
 const Footer = () => {
   const SITEMAP = [
     {
       title: "Company",
-      links: ["About", "Features", "Works", "Career"],
+      links: ["About Us", "Our Services", "Case Studies", "Careers"],
     },
     {
-      title: "Help",
+      title: "Support",
       links: [
         "Customer Support",
-        "  Delivery Details",
+        "FAQ",
         "Terms & Conditions",
         "Privacy Policy",
       ],
@@ -19,22 +18,23 @@ const Footer = () => {
     {
       title: "Resources",
       links: [
-        "Free eBooks",
-        " Development Tutorial",
-        "   How to - Blog",
-        "Youtube Playlist",
+        "Blog",
+        "Content Strategy Guide",
+        "SEO Tips & Tutorials",
+        "Free Resources & eBooks",
       ],
     },
     {
-      title: "Links",
+      title: "Social",
       links: [
-        "Free eBooks",
-        "Development Tutorial",
-        " How to - Blog",
-        " Youtube Playlist",
+        "Follow Us on Twitter",
+        "Like Us on Facebook",
+        "Connect on LinkedIn",
+        "Subscribe to Our YouTube Channel",
       ],
     },
   ];
+  
 
   return (
     <footer className=" ">

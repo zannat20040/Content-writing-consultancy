@@ -1,4 +1,3 @@
-import React from "react";
 import Heading from "../Shared Component/Heading";
 import Subheading from "../Shared Component/Subheading";
 import { Button } from "@material-tailwind/react";
@@ -8,36 +7,40 @@ const PackagePlans = () => {
     {
       type: "Starter Plan",
       price: "$29",
-      desc: "This package is suitable for teams 1-15 people.",
+      desc: "Perfect for small businesses and startups looking to create a strong online presence.",
       features: [
-        "10 GB Dedicated Hosting Free",
-        "Best for Developers, Freelancers",
-        "1 Year Support",
+        "5 Blog Posts/Month",
+        "SEO-Optimized Content",
+        "1 Social Media Post/Week",
+        "Basic Analytics",
+        "1 Month of Support",
       ],
     },
 
     {
-      type: "Basic Plan",
+      type: "Growth Plan",
       price: "$79",
-      desc: "This package is suitable for teams 1-50 people.",
+      desc: "Ideal for growing businesses that need more content and strategy support.",
       features: [
-        "15 GB Dedicated Hosting Free",
-        "Best for Developers, Freelancers",
-        "5 Year Support",
-        "Free Custom Domain",
-        "Basic Statistics",
+        "15 Blog Posts/Month",
+        "Advanced SEO-Optimized Content",
+        "3 Social Media Posts/Week",
+        "Keyword Research & Optimization",
+        "1 Custom Landing Page",
+        "3 Months of Support",
       ],
     },
     {
       type: "Premium Plan",
-      price: "$129",
-      desc: "This package is suitable for teams 1-100 people.",
+      price: "$149",
+      desc: "Tailored for larger businesses requiring comprehensive content strategy and SEO.",
       features: [
-        "20 GB Dedicated Hosting Free",
-        "Best for Developers,  Freelancers",
-        "Unlimited Support",
-        "Free Custom Domain",
-        "Full Statistics",
+        "30 Blog Posts/Month",
+        "Full SEO-Optimized Content Strategy",
+        "Daily Social Media Posts",
+        "Custom Email Campaigns",
+        "Advanced Analytics & Reporting",
+        "Unlimited Support & Strategy Consultation",
       ],
     },
   ];
@@ -49,36 +52,38 @@ const PackagePlans = () => {
       </div>
 
       <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 justify-between mt-24 text-gray-500 font-inter ">
-        {plans.map((data, index) => (
-          <div className="p-10 bg-[#282A37] rounded-2xl flex flex-col justify-between gap-16 ">
+        {plans.map((data) => (
+          <div
+            key={data.type}
+            className="p-10 bg-[#282A37] rounded-2xl flex flex-col justify-between gap-16 "
+          >
             <div>
-            <p>{data.type}</p>
-            <p className=" mt-6 text-white">
-              <span className="text-5xl ">{data.price}</span>/month
-            </p>
-            <p className="mt-3  mb-12">{data.desc}</p>
-            <h5 className="text-white font-bold mb-6">What’s included:</h5>
-            <ul className="flex flex-col gap-2">
-              {data.features.map((feature) => (
-                <li>{feature}</li>
-              ))}
-            </ul>
+              <p>{data.type}</p>
+              <p className=" mt-6 text-white">
+                <span className="text-5xl ">{data.price}</span>/month
+              </p>
+              <p className="mt-3  mb-12">{data.desc}</p>
+              <h5 className="text-white font-bold mb-6">What’s included:</h5>
+              <ul className="flex flex-col gap-2">
+                {data.features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
             </div>
 
-      
             {data.price == "$79" ? (
               <Button
                 variant="gradient"
-                className="w-full inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r from-[#2B59FF] to-[#BB2BFF]  hover:from-[#5C7FFF] hover:to-[#CB5CFF] transition-all duration-700 ease-in-out focus:from-[#0035F5] focus:to-[#A600F5]"
+                className="w-full inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r  to-[#E100FF] from-[#7F00FF]  hover:from-[#E100FF] hover:to-[#7F00FF] transition-all duration-700 ease-in-out focus:from-[#e661f8] focus:to-[#a351f6]"
               >
-                <span>Blog Headlines</span>
+                <span>Get Started</span>
               </Button>
             ) : (
               <Button
                 variant="text"
                 className="inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded-md font-normal bg-12141D border border-[#FFFFFF4D] w-full"
               >
-                <span>Blog Intros</span>
+                <span>Purchase Now</span>
               </Button>
             )}
           </div>
