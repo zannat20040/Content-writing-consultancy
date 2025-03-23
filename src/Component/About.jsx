@@ -1,21 +1,20 @@
 import AboutLayout from "../Shared Component/AboutLayout";
 import AboutImageLayout from "../Shared Component/AboutImageLayout";
-import img1 from "../assets/about/work (1).avif";
 import img2 from "../assets/about/work (2).avif";
 import img3 from "../assets/about/work(1).png";
 import img4 from "../assets/about/work(2).png";
 import img5 from "../assets/about/work(3).png";
+import AboutRight from "../Shared Component/AboutRight";
+import AboutLeft from "../Shared Component/AboutLeft";
 
 const About = () => {
   return (
     <div className="container mx-auto px-5 mt-6 about-section">
       {/* 1st */}
       <div className="aboutus grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center ">
-        <AboutImageLayout
-          img={img1}
-          color="rgba(159, 54, 242, 0.3)"
-          direction="60px 0 100px"
-        />
+        <div className="relative">
+          <AboutRight />
+        </div>
         <AboutLayout
           h1TagOpeninng={
             "Understanding Your Brand, Audience, and Content Goals"
@@ -35,19 +34,13 @@ const About = () => {
             }
           />
         </div>
-        <AboutImageLayout
-          img={img2}
-          color="rgba(54, 107, 242, 0.3)"
-          direction="-54px 0 100px"
-        />
+        <AboutLeft />
       </div>
       {/* 3rd */}
       <div className="mt-20 aboutus grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center ">
-        <AboutImageLayout
-          img={img3}
-          color="rgba(159, 54, 242, 0.3)"
-          direction="60px 0 100px"
-        />
+        <div className="relative">
+          <AboutRight />
+        </div>
         <AboutLayout
           h1TagOpeninng={
             "Writing High-Quality, Engaging, and SEO-Friendly Content"
@@ -69,19 +62,13 @@ const About = () => {
             }
           />
         </div>
-        <AboutImageLayout
-          img={img4}
-          color="rgba(54, 107, 242, 0.3)"
-          direction="-54px 0 100px"
-        />
+        <AboutLeft />
       </div>
       {/* 5th */}
       <div className="mt-20 aboutus grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center ">
-        <AboutImageLayout
-          img={img5}
-          color="rgba(159, 54, 242, 0.3)"
-          direction="60px 0 100px"
-        />
+        <div className="relative">
+          <AboutRight />
+        </div>
         <AboutLayout
           h1TagOpeninng={"Providing You with Ready-to-Publish Content"}
           pTagopening={
