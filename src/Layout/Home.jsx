@@ -16,6 +16,7 @@ const Home = () => {
         <ResponsiveNavbar />
         <Banner />
         <HappyClient />
+        <CTA />
         <About />
         <Feature />
       </div>

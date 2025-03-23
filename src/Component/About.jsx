@@ -4,7 +4,7 @@ import AboutLeft from "../Shared Component/AboutLeft";
 
 const About = () => {
   return (
-    <div className="container mx-auto px-5 mt-6 about-section">
+    <div className="container mx-auto px-5 mt-36 about-section">
       {/* 1st */}
       <div className="aboutus grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center ">
         <div className="relative">
