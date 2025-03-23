@@ -25,7 +25,7 @@ const HappyClient = () => {
         Trusted by Over 3,000 Satisfied Clients{" "}
       </p>
 
-      <div className="grid sm:grid-col-2 md:grid-cols-3 lg:grid-cols-4 gap-5 justify-center items-center max-w-3xl mx-auto mt-16 ">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 justify-center items-center max-w-3xl mx-auto mt-16 ">
         {clientLogos.map((data, index) => (
           <img
             src={data.clientImg}

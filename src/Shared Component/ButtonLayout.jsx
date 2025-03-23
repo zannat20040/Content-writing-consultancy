@@ -5,7 +5,7 @@ const ButtonLayout = ({ label }) => {
   return (
     <Button
       variant="gradient"
-      className="hidden lg:inline-block text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r to-[#E100FF] from-[#7F00FF]  hover:from-[#E100FF] hover:to-[#7F00FF] transition-all duration-700 ease-in-out focus:from-[#e661f8] focus:to-[#a351f6]"
+      className=" text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r to-[#E100FF] from-[#7F00FF]  hover:from-[#E100FF] hover:to-[#7F00FF] transition-all duration-700 ease-in-out focus:from-[#e661f8] focus:to-[#a351f6]"
     >
       <span>{label}</span>
     </Button>

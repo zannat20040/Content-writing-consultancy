@@ -2,7 +2,7 @@ import { GoDotFill } from "react-icons/go";
 
 export default function AboutRight() {
   return (
-    <div className="bg-white p-7 rounded-lg w-3/4 ">
+    <div className="bg-white p-7 rounded-lg w-10/12 sm:w-3/4 ">
       <div>
         <p className="text-lg font-bold"> Content Marketing</p>
         <p className="text-gray-500 text-sm">

@@ -72,7 +72,7 @@ const Feature = () => {
           />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 my-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 my-20">
           {tools.map((data, index) => (
             <div
               className="flex gap-4 justify-between font-inter bg-[#282A37] p-6 rounded-xl text-white  items-start"
