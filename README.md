@@ -14,10 +14,10 @@ This repository contains the code for a **Content Writing Consultancy Website** 
 
 ## Technologies Used
 
-- **HTML5**: Markup language for structuring content.
 - **CSS3**: Styling the website with modern layout techniques (Flexbox, Grid).
 - **JavaScript**: For interactive elements and functionality.
 - **React.js**: For building user interfaces and dynamic components.
+- **AOS**: For smooth and engaging animations
 
 
 ## Installation
