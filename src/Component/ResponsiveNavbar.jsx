@@ -20,9 +20,6 @@ const ResponsiveNavbar = () => {
 
   const navList = (
     <ul className="  items-center flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-FAFAFA ">
-      <a href="#" className="flex items-center py-3">
-        <img src={logo} alt="" className="w-9" />
-      </a>
       <Typography as="li" variant="small" className="font-normal">
         <a href="#" className="flex items-center font-inter">
           Home
@@ -66,7 +63,14 @@ const ResponsiveNavbar = () => {
       <Navbar className=" container mx-auto  px-5 border-0 bg-12141D  shadow-none rounded-none py-0">
         <div className="flex items-center justify-between ">
           <div className="flex items-center  gap-4 w-full  justify-between py-3 lg:py-0">
-            <div className="mr-4 hidden lg:block ">{navList}</div>
+            <div className="flex gap-5 items-center">
+              <div>
+                <a href="#" className="flex items-center py-3">
+                  <img src={logo} alt="" className="w-9" />
+                </a>
+              </div>
+              <div className="mr-4 hidden lg:block ">{navList}</div>
+            </div>
             <div className="flex items-end gap-x-3">
               <Button
                 variant="text"
@@ -121,20 +125,20 @@ const ResponsiveNavbar = () => {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav} className="p-5 lg:p-0">
+        <MobileNav open={openNav} className="p-5 lg:p-0 h-auto">
           {navList}
-          <div className="flex gap-3 items-center flex-col mt-5 ">
+          <div className="flex gap-3 items-center justify-center mt-5 ">
             <Button
               fullWidth
               variant="text"
               size="sm"
-              className=" block lg:hidden  text-FAFAFA capitalize font-inter py-3 text-sm px-7 border border-[#FFFFFF4D] rounded font-normal w-full"
+              className=" block lg:hidden  text-FAFAFA capitalize font-inter py-3 text-sm px-7 border border-[#FFFFFF4D] rounded font-normal w-fit"
             >
               <span>Sign in</span>
             </Button>
             <Button
               variant="gradient"
-              className="block w-full lg:hidden text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r from-[#2B59FF] to-[#BB2BFF]  hover:from-[#5C7FFF] hover:to-[#CB5CFF] transition-all duration-700 ease-in-out focus:from-[#0035F5] focus:to-[#A600F5]"
+              className="block  lg:hidden text-FAFAFA capitalize font-inter py-3 px-7 text-sm rounded font-normal bg-gradient-to-r from-[#2B59FF] to-[#BB2BFF]  hover:from-[#5C7FFF] hover:to-[#CB5CFF] transition-all duration-700 ease-in-out focus:from-[#0035F5] focus:to-[#A600F5]"
             >
               <span>Get Started Free</span>
             </Button>
