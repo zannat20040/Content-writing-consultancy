@@ -10,7 +10,7 @@ This repository contains the code for a **Content Writing Consultancy Website** 
 - **Service Packages**: Display various content writing service packages with pricing and descriptions.
 - **Customer Testimonials**: Show real client reviews to build trust and credibility.
 - **Frequently asked**: A dedicated section designed to address common inquiries regarding content writing, SEO strategies, and digital marketing. 
-
+-**Custom-Code Image**: For creating a custom image in the About Us section with personalized styling using CSS, ensuring a unique and responsive design.
 
 ## Technologies Used
 
@@ -18,7 +18,7 @@ This repository contains the code for a **Content Writing Consultancy Website** 
 - **CSS3**: Styling the website with modern layout techniques (Flexbox, Grid).
 - **JavaScript**: For interactive elements and functionality.
 - **React.js**: For building user interfaces and dynamic components.
--**Custom-Code Image**: For creating a custom image in the About Us section with personalized styling using CSS, ensuring a unique and responsive design.
+
 
 ## Installation
 
