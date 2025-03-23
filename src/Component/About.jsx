@@ -1,9 +1,4 @@
 import AboutLayout from "../Shared Component/AboutLayout";
-import AboutImageLayout from "../Shared Component/AboutImageLayout";
-import img2 from "../assets/about/work (2).avif";
-import img3 from "../assets/about/work(1).png";
-import img4 from "../assets/about/work(2).png";
-import img5 from "../assets/about/work(3).png";
 import AboutRight from "../Shared Component/AboutRight";
 import AboutLeft from "../Shared Component/AboutLeft";
 
